@@ -1,0 +1,337 @@
+#content{
+  display: grid;
+  grid-template-columns: 300px 800px 1fr;
+  grid-auto-rows: 200px 800px 1000px 800px 300px 500px 725px 75px 75px 75px;
+}
+
+
+body{
+  background: -webkit-linear-gradient(right, #ffe5b4 0%, orange 100%);
+  background-color: white;
+
+
+}
+
+/* row 1*/
+.titlebox{
+  border: 2px ;
+  grid-column: 2;
+  grid-row: 1/1;
+  margin-left: 150px;
+  margin-top: 100px;
+  padding-bottom: 10px;
+  font-family: sans-serif;
+
+
+  font-size: 50px;}
+.faceProfile{
+    border:2px solid black;
+    background-image: url("imgs/IMG_2550.png");
+    background-size: 300px 550px;
+    background-position: center;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 100px;
+    height:200px;
+    width:200px;
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 200px;
+    margin-top: 50px;
+
+  }
+  .getInfo{
+    border: 3px solid black;
+    border-radius: 35px;
+    width: 100px;
+    background-color: gold;
+    height:35px;
+    padding: 10px;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-right: 50px;
+    font-family: sans-serif;
+
+  }
+/*row 2*/
+.boxOne{
+  border:2px ;
+  grid-column: 1/4;
+  grid-row: 2/2;
+  margin:10px;
+  margin-top: 300px;
+  color: purple;
+  outline-color: black;
+  font-family:sans-serif;
+
+
+
+}
+
+
+/*row 3*/
+.quadBoxOne{
+  border: 2px solid black;
+  border-radius: 10px;
+  background: pink;
+  overflow: hidden;
+  background-image: url("imgs/img_2554.jpg");
+  background-position: right;
+  background-size: 400px 500px;
+  height: 400px;
+  width: 400px;
+  grid-row: 3;
+  grid-column: 2/2;
+  text-align: center;
+
+}
+.quadBoxTwo{
+  border: 2px solid black;
+  border-radius: 10px;
+  background: pink;
+  overflow: hidden;
+  background-image: url("imgs/img_2555.jpg");
+  background-position: right;
+  background-size: 400px 500px;
+  height: 400px;
+  width: 400px;
+  grid-row: 3;
+  grid-column: 2/2;
+  text-align: center;
+  margin-left: 410px;
+
+
+}
+.quadBoxThree{
+  border: 2px solid black;
+  border-radius: 10px;
+  background: pink;
+  overflow: hidden;
+  background-image: url("imgs/img_2561.png");
+  background-position: right;
+  background-size: 400px 850px;
+  height: 400px;
+  width: 400px;
+  grid-row: 3;
+  grid-column: 2/2;
+  margin-top: 410px;
+  text-align: center;
+
+
+}
+.quadBoxQuad{
+  border: 2px solid black;
+  border-radius: 10px;
+  background: pink;
+  overflow: hidden;
+  background-image: url("imgs/img_2560.png");
+  background-position: right;
+  background-size: 400px 850px;
+  height: 400px;
+  width: 400px;
+  grid-row: 3;
+  grid-column: 2/2;
+  margin-top: 410px;
+  margin-left: 410px;
+  text-align: center;
+}
+
+/*row 4*/
+.slider-frame{
+  border: 2px solid black;
+  grid-row: 4;
+  grid-column: 2;
+  overflow: hidden;
+  height: 475px;
+  width: 800px;
+}
+@-webkit-keyframes slide_animation{
+  0% { left: 0px; }
+  10% {left:0px;}
+  20% {left:1200px;}
+  30% {left:1200px;}
+  40% {left:2400px;}
+  50% {left:2400px;}
+  60% {left:1200px;}
+  70% {left:1200px;}
+  80% {left:0px;}
+  90% {left:0px;}
+  100% {left:0px;}
+
+}
+.slide-images{
+ width: 3600px;
+  height: 800px;
+  margin:0 0 0 -2400px;
+  position: relative;
+  -webkit-animation-name: slide_animation;
+  -webkit-animation-duration:33s;
+  -webkit-animation-iteration:infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+}
+.img-container{
+  height:800px;
+  width: 1200px ;
+  position: relative;
+  float: left;
+
+}
+
+/*row 5*/
+.reviewBoxOne{
+  border: 2px solid black;
+  border-radius:10px;
+  background: white;
+  height: 50px;
+  width: 650px;
+  grid-row: 5;
+  grid-column: 2;
+  font-size: 20px;
+  margin-top:160px;
+  margin-left: 80px;
+  padding: 5px;
+}
+.reviewBoxTwo{
+ border:2px  solid black;
+  border-radius:10px;
+  background: white;
+  font-size: 20px;
+  height: 70px;
+
+  width: 650px;
+  grid-row: 5;
+  grid-column: 2;
+  margin-top: 295px;
+  margin-left: 80px;
+  padding: 5px;
+}
+.faceProfileTwo{
+  border:2px solid black;
+  background: white;
+  background-image: url("imgs/IMG_2563.png");
+  background-size: 265px 550px;
+  background-position: center;
+  border-radius: 300px;
+  height:250px;
+  width:200px;
+  padding-right: 75px;
+  grid-column: 1;
+  text-align: justify;
+  grid-row: 5;
+  margin-left: 75px;
+
+  position: relative;
+}
+.nameBoxOne{
+
+  border-radius: 5px;
+  background: white;
+  height: 30px;
+  width: 175px;
+  grid-row: 5;
+  grid-column: 2;
+  margin-top:90px;
+  margin-left: 140px;
+  padding-left: 10px;
+  font-size: 20px;
+  padding: 15px;
+
+}
+.nameBoxTwo{
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+  background: white;
+  grid-row: 5;
+  grid-column: 2;
+  margin-top:30px;
+  margin-left: 140px;
+  font-size: 20px;
+  padding: 15px;
+  margin-top: 230px;
+  margin-left: 140px;
+
+}
+/*row 6*/
+.statementBox{
+  border: 2px solid black;
+  color: purple;
+  height: 300px;
+  width: 100%;
+  grid-column: 2;
+  grid-row: 6;
+  margin-top: 200px;
+
+
+}
+/*row 7*/
+.nameInfo{
+  border: 2px solid black;
+  border-radius:10px;
+  background: white;
+  height: 50px;
+  width: 650px;
+  grid-row: 7;
+  grid-column: 2;
+  text-align: center;
+  margin-top:60px;
+  margin-left: 80px;
+}
+.email{
+  border: 2px solid black;
+  border-radius:10px;
+  background: white;
+  height: 50px;
+  width: 650px;
+  grid-row: 7;
+  grid-column: 2;
+  text-align: center;
+  margin-top:160px;
+  margin-left: 80px;
+}
+.nameBoxThree{
+  border: 2px;
+  height: 20px;
+  width: 200px;
+  grid-row: 7;
+  grid-column: 2;
+  margin-top:30px;
+  margin-left: 140px;
+  font-size: 20px;
+}
+.container{
+  border: 4px solid black;
+  color: purple;
+  border-radius: 40px;
+  background: pink;
+  font-size: 30px;
+  height: 500px;
+  width: 50%;
+  grid-row: 7;
+  grid-column: 2;
+  padding-top: 50px ;
+  margin-left: 200px;
+  margin-top: 225px;
+
+}
+h3{
+
+  font-family: sans-serif;
+
+
+}
+form input, form textarea{
+  font-size: 20px
+}
+form button{
+  border-radius: 30px;
+  font-family: sans-serif;
+  color: black;
+  background: lightblue;
+  padding: 15px;
+  width: 150px;
+  font-size: 18px;
+}
+
+/*row 8*/
